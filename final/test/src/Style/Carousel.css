@@ -1,0 +1,42 @@
+.carousel {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  margin-top: 2rem;
+  max-width: 100vx;
+}
+
+.carousel__slide-container { 
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin: auto;
+  max-width: 100vx;
+
+  list-style-type: none;
+}
+
+.carousel__slide { 
+  position: absolute;
+  visibility: hidden;
+}
+
+.carousel__slide--active { 
+  position: static;
+  visibility: visible;
+}
+
+.carousel__img { 
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel__control { 
+  min-width: 54px;
+  min-height: 30px;
+}
+
